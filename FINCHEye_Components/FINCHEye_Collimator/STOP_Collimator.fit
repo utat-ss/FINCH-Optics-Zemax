@@ -1,0 +1,130 @@
+$
+SOL     FIT     1.-6    SAG     LIN     
+$
+$ Solution Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+FEAPROG NXNAST  MM      NX      CEL     LBF     
+OPTPROG ZEMAX   MM      
+MODFILE%C:\Users\optics02\Downloads\lens_merged_sldprt_sim1-s-lah64_solution.dat
+ENVIR   CEL     20.     ATM     1.      
+$
+$ Surface Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+SURFACE 1               PROP    1       1       POS     0               
+        NONE    INT     
+%       
+SURDEF  1       1               
+SURGEOM 1       CONIC   0.      0.      0.      0.      1.              
+        OPT     0.      0.      0.      
+SURAPER 1       NONE                                            FCID    
+SUROBST 1       NONE                                            FCID    
+OPDPTH  1       NONE                                            FCID    
+SURNSQ  1       SEQ             
+FITPOLY 1       ZRN     8       6                       
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+SURFACE 2               PROP    2       2       POS     0               
+        NONE    INT     
+%       
+SURDEF  2       1               
+SURGEOM 2       ASPHE   -7.77   -1.003  -7.77   -1.003  1.              
+        OPT     0.      0.      0.      
+SURPOLY 2       2       0       0.      0.      
+SURPOLY 2       4       0       -9.926-50.      
+SURPOLY 2       6       0       6.994-8 0.      
+SURPOLY 2       8       0       2.372-9 0.      
+SURPOLY 2       10      0       1.272-110.      
+SURPOLY*2               12              0               -1.263-13       
+*       0.              
+SURPOLY 2       14      0       0.      0.      
+SURPOLY 2       16      0       0.      0.      
+SURAPER 2       NONE                                            FCID    
+SUROBST 2       NONE                                            FCID    
+OPDPTH  2       NONE                                            FCID    
+SURNSQ  2       SEQ             
+FITPOLY 2       ZRN     8       6                       
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+MEDTYP  CALC    EDLNOLD 
+$
+$ Coordinate System Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+CORD2R  1       0       0.      0.      0.      0.      0.      1.      
+        1.      0.      0.      
+CORD2R  2       1       0.      0.      4.25    0.      0.      8.5     
+        4.25    0.      4.25    
+CORD2R* 3               1               0.              0.              
+*       12.03263219657260.              0.              24.0652643931451
+*       12.03263219657260.              12.0326321965726
+$
+$ Datum Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+DATUM   PROP    0       1       SURF    
+DATDEF  1               
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+$
+$ Disturbances Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+DISTYP  NO      ALL     NONE    NONE    NONE    NONE    
+DFOPT   DFFILE  
+DFFILE% C:\Users\optics02\Desktop\Zemax projects\lens_merged_sldprt_sim1-s-lah64_solution.op2
+DFSTPD1 ALL                                                             
+$
+$ Data Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+$
+$ Line-of-Sight Utilities Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+LOSDAT1         1.-5    1.-5    1.-8    FIX     1.-5    
+LOSRAY2 1                       TYPE2   0.      0.      
+$
+$ Monte Carlo Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+MONTE   NO      1000            FEA     90.     YES     NO      NO      
+        YES     100     YES     20      
+$
+$ Output Entries
+$
+$--1---><--2---><--3---><--4---><--5---><--6---><--7---><--8---><--9--->
+OUTSUM1 YES     
+OUTNOD  YES     
+OUTCOF1 YES     
+OUTCOF3 YES     
+OUTPLOT 1       1       1       MAX     
+OUTPLOT 2       1       1       MAX     
+PARAM   ZOSVER  202313  
+$ End of Echo
+
+
+                                                                                
+  ==============================================================================
+  Sigmadyne, Inc.       SigFit  Version = 2023R1a          10-FEB-2024  04:39:08
+  ------------------------------------------------------------------------------
+  Disclaimer:   Sigmadyne, Inc. assumes no liability or responsibility to any
+  person, company or entity for direct or indirect damages resulting from the
+  use of this program.
+  ------------------------------------------------------------------------------
+  For more info on Opto-Mechanics, visit our website at: www.sigmadyne.com
+  ------------------------------------------------------------------------------
+ 
+  FlexNet licensing invoked.
+  Checked out option STANDRD SIGFIT
+  Days remaining on license lease =           20
+
+  ------------------------------------------------------------------------------
+
+  # Coordinate Systems  =        4     Limit =    5000
+
+
+  **Fatal Error: Surface has NO nodess  SID=       2
+
+
+  **Due to above errors, program is stopping
+    check the definition of surface and lens
