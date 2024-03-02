@@ -1,5 +1,5 @@
 # FINCH-Optics-Zemax
-Welcome to the Optics team's Zemax repository! This is where we store all Zemax files modeling the FINCH eye!
+Welcome to the Optics team's Zemax repository! This is where we store all Zemax files modeling the FINCH Eye!
 
 Make sure to commit your files here any time you save changes on the remote machine. You only need to add the .zmx files and any object files you create, not the .zos files (Zemax session files).
 
