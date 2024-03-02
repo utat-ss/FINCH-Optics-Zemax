@@ -1,0 +1,27 @@
+! Prism object definition
+V 1 9.25 11 13.5
+V 2 9.25 11 1
+V 3 9.25 4.66 13.5
+V 4 9.25 -11 2
+V 5 9.25 -11 1
+V 6 -9.25 11 13.5
+V 7 -9.25 11 1
+V 8 -9.25 4.66 13.5
+V 9 -9.25 -11 2
+V 10 -9.25 -11 1
+
+
+! Front face
+P 1 2 5 4 3 0 0
+! Back face
+P 6 7 10 9 8 0 0
+! Left side 1
+R 1 6 8 3 0 0
+! Left side 2
+R 3 8 9 4 0 0
+! Right side 
+R 2 7 10 5 0 0
+! Top
+R 1 6 7 2 0 0
+! Bottom
+R 4 5 10 9 0 0
