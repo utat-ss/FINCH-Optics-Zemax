@@ -1,3 +1,8 @@
+! Define the face groups
+C 0 "Front Face"
+C 1 "Back Face"
+C 2 "Side Faces"
+
 ! Prism object definition
 V 1 9.25 11 -12.5
 V 2 9.25 11 0
@@ -9,19 +14,26 @@ V 7 -9.25 11 0
 V 8 -9.25 4.66 -12.5
 V 9 -9.25 -11 -1
 V 10 -9.25 -11 0
+V 11 9.25 4.66 -1
+V 12 9.25 4.66 0
+V 13 -9.25 4.66 -1
+V 14 -9.25 4.66 0
 
-
-! Front face
-P 1 2 5 4 3 0 0
-! Back face
-P 6 7 10 9 8 0 0
-! Left side 1
+! Closest (side) face
+T 3 4 11 0 2
+R 11 12 5 4 0 2 
+R 1 2 12 3 0 2
+! Farthest (side) face
+T 8 9 13 0 2
+R 13 14 10 9 0 2
+R 6 7 14 8 0 2
+! Left (front) face 1
 R 1 6 8 3 0 0
-! Left side 2
+! Left (front) face 2
 R 3 8 9 4 0 0
-! Right side 
-R 2 7 10 5 0 0
-! Top
-R 1 6 7 2 0 0
-! Bottom
-R 4 5 10 9 0 0
+! Right (back) face
+R 2 7 10 5 0 1
+! Top (side)
+R 1 6 7 2 0 2
+! Bottom (side)
+R 4 5 10 9 0 2
